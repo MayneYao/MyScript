@@ -111,7 +111,7 @@ def get_html(name):
 
 #从数据得到邮件列表地址,加入到要发送的邮件地址表中
 def getaddress():
- #   con =mysql.connector.connect(user='root',password='mysql2016',database='gw2')
+ #   con =mysql.connector.connect(user='root',password='mypwd',database='gw2')
  #  cursor =con.cursor()
  #   cursor.execute('select distinct * from email')
  #   v=cursor.fetchall()
@@ -127,7 +127,7 @@ def _format_addr(s):
 #发送邮件
 def sendemail(sendhtml,title,to_addr):
     from_addr = 'kungenloveu@163.com'
-    password = 'rljwryviktiuhcah'
+    password = '###mypwd'
     smtp_server = 'smtp.163.com'
 
     msg = MIMEText(sendhtml, 'html', 'utf-8')
