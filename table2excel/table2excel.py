@@ -13,7 +13,7 @@ sleep(3)
 r = requests.get("http://kafka.apache.org/documentation")
 soup = bs(r.text,"html5lib")
 x = soup.find_all("table")
-#手动确认开始的7张表格
+#手动确认开始的6张表格
 # for i in range(7):·
 #    print(x[i])
 x = x[0:7]
